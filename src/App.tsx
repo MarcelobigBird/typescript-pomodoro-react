@@ -1,7 +1,12 @@
 import React from 'react';
+import { PomodoroTimer } from './components/pomodoro-timer';
 
-function App() {
-  return <div className="App">Hello world!!!</div>;
+function App(): JSX.Element {
+  return (
+    <div className="container">
+      <PomodoroTimer pomodoroTime={1500} shortRestTime={300} longeRestTime={900} cycles={4} />;
+    </div>
+  );
 }
 
 export default App;
